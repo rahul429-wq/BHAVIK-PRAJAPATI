@@ -1,0 +1,242 @@
+$primary: black;
+$secondary: #fdfdfd;
+$othercolor: #f5eded;
+$bgcolor: #071e3d;
+html {
+  scroll-behavior: smooth;
+}
+body {
+  height: 100vh;
+  background: $bgcolor;
+  position: relative;
+}
+
+header {
+  width: 100%;
+  position: absolute;
+  min-height: 10vh;
+  h1 {
+    cursor: wait;
+    color: $secondary;
+  }
+  a {
+    display: block !important;
+    // transition: 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+    transition: 0.3s ease;
+  }
+  li {
+    padding: 0px 10px;
+  }
+  a {
+    padding: 10px;
+    font-weight: bold;
+  }
+  li:hover a {
+    // background-color: white;
+    color: $secondary;
+    transform: translateY(-10px);
+    border-bottom: 20px solid $secondary;
+  }
+  span {
+    display: none;
+  }
+  @media (max-width: 768px) {
+    h1 {
+      width: 100%;
+    }
+    a {
+      color: $primary;
+    }
+    .sidebar {
+      flex-direction: column;
+      position: absolute;
+      background-color: #f5eded;
+      width: 100%;
+      top: 10vh;
+      right: -100%;
+      color: $primary;
+      transition: 0.3s ease;
+    }
+    span {
+      display: block;
+      font-size: 2.3rem;
+      cursor: pointer;
+      color: $secondary;
+    }
+    .toggle {
+      right: 0%;
+    }
+  }
+}
+section#sec-1 {
+  user-select: none;
+
+  min-height: 100vh;
+  .image1 {
+    width: 40%;
+    height: 40%;
+  }
+  h1 {
+    padding-left: 100px;
+    font-size: 3.9rem;
+    color: $secondary;
+    span {
+      // color: #f5f24b;
+      font-size: 4.7rem;
+      background: linear-gradient(
+        to right,
+        #8e9eab,
+        #eef2f3
+      ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      background: -webkit-linear-gradient(
+        to right,
+        #8e9eab,
+        #eef2f3
+      ); /* Chrome 10-25, Safari 5.1-6 */
+
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+    }
+  }
+  @media (max-width: 768px) {
+    .image1 {
+      display: none;
+    }
+    h1 {
+      padding-left: 10px;
+    }
+  }
+}
+section#sec-2 {
+  position: relative;
+  min-height: 100vh;
+  .title {
+    position: absolute;
+    top: 50px;
+    font-size: 1.8rem;
+    color: $othercolor;
+  }
+  h3 {
+    color: $secondary;
+    font-size: 1.75rem;
+    // padding-bottom: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    transition: 0.3s ease;
+    user-select: none !important;
+  }
+  h3:hover {
+    user-select: none !important;
+    color: $othercolor;
+    transform: translateX(-20px);
+    border-right: 20px solid $othercolor;
+  }
+  a {
+    padding: 10px;
+    border: 1px solid $secondary;
+    transition: 0.3s ease;
+
+    font-weight: bold;
+  }
+  a:hover {
+    background-color: $othercolor;
+    border: none;
+    color: $primary;
+  }
+  @media (max-width: 768px) {
+  }
+}
+section#sec-3 {
+  min-height: 100vh;
+  position: relative;
+  .title {
+    position: absolute;
+    top: 50px;
+    font-size: 1.8rem;
+    color: $othercolor;
+  }
+  .__card {
+    text-align: center;
+    padding: 20px;
+    width: 20%;
+    min-height: 30vh;
+    border: 1px solid $secondary;
+    color: $secondary;
+    transition: 0.3s ease;
+  }
+  .__card:hover {
+    border-bottom: 100px solid $secondary;
+    border-bottom-left-radius: 100px;
+  }
+  @media (max-width: 768px) {
+    flex-direction: column;
+    .__card {
+      width: 90%;
+    }
+    .title {
+      top: -100px;
+    }
+  }
+}
+section#sec-5 {
+  min-height: 100vh;
+  position: relative;
+  .title {
+    position: absolute;
+    top: 50px;
+    font-size: 1.8rem;
+    color: $othercolor;
+  }
+  p {
+    color: $othercolor;
+
+    font-size: 2.4rem;
+  }
+  a {
+    font-size: 2.4rem;
+    border: $othercolor 2px dotted;
+    padding: 5px;
+    text-align: center;
+    transition: 0.3s ease;
+  }
+  a:hover {
+    border: $othercolor 5px dashed;
+  }
+  @media (max-width: 768px) {
+    text-align: center;
+  }
+}
+
+// btn scroll top
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  // background-color: #d72323; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 50%; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+
+  background: #c31432; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #240b36,
+    #c31432
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #240b36,
+    #c31432
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}

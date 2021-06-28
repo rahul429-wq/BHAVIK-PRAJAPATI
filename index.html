@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="utilities.css" />
+  </head>
+  <body>
+    <header class="flex justify-space-around align-center">
+      <div class="logo">
+        <h1>&lt; Bhavik☕/&gt;</h1>
+      </div>
+      <ul class="flex align-center sidebar">
+        <li><a href="#sec-1">Home</a></li>
+        <li><a href="#sec-2">About</a></li>
+        <li><a href="#sec-3">What</a></li>
+        <li><a href="#sec-5">Contact</a></li>
+      </ul>
+      <span id="hamburger">&#9776;</span>
+    </header>
+    <section id="sec-1" class="flex justify-space-around align-center">
+      <div class="left">
+        <h1>
+          Hey 🍻 Cheers,
+          <br />
+          I am <span>B</span>havik Prajapati
+        </h1>
+      </div>
+      <img class="image1" src="src/dp-min.png" alt="" />
+    </section>
+    <section id="sec-2" class="flex justify-center align-center flex-dir-col">
+      <div class="title">
+        <h2>&lt;About Us/&gt;</h2>
+      </div>
+      <h3>DEVELOPER&nbsp;</h3>
+      <h3>FREELANCER&nbsp;</h3>
+      <h3>DESIGNER&nbsp;</h3>
+      <a href="#">DOWNLOAD CV</a>
+    </section>
+
+    <section id="sec-3" class="flex justify-space-around align-center">
+      <div class="title">
+        <h2>&lt;What I Do/&gt;</h2>
+      </div>
+      <div class="__card">
+        <h3>Front-end</h3>
+        <p>
+          As a javascript developer, I have experience in HTML5 and CSS3
+          techniques working with jQuery or more advanced javascript MVC
+          frameworks such as angular and React.
+        </p>
+      </div>
+      <div class="__card">
+        <h3>Back-end</h3>
+        <p>
+          Utilising php frameworks such as Zend or creating bespoke code, I've
+          written services supporting thousands of users, including REST APIs,
+          e-learning applications and more.
+        </p>
+      </div>
+      <div class="__card">
+        <h3>Consultancy</h3>
+        <p>
+          As well as providing development services, I can also help you decide
+          strategic roadmaps via consultancy services.
+        </p>
+      </div>
+    </section>
+
+    <section id="sec-5" class="flex justify-center align-center flex-dir-col">
+      <div class="title">
+        <h2>&lt;Contact Me/&gt;</h2>
+      </div>
+      <p>
+        Stay bold & Have a supreme
+        <span id="dayname"></span>
+        <br />
+      </p>
+      <a style="color: #d72323" href="mailto:rahulprajapati1666@gmail.com"
+        >Mail me <span>📫</span></a
+      >
+    </section>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">🚀</button>
+  </body>
+
+  <script src="js/app.js"></script>
+</html>
