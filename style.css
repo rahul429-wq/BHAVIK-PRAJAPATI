@@ -15,6 +15,7 @@ section {
   body {
     -ms-scroll-snap-type: none !important;
         scroll-snap-type: none !important;
+    overflow-x: hidden;
   }
   section {
     scroll-snap-align: none !important;

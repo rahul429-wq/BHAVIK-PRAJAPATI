@@ -15,6 +15,7 @@ section {
 @media (max-width: 768px) {
   body {
     scroll-snap-type: none !important;
+    overflow-x: hidden;
   }
   section {
     scroll-snap-align: none !important;
