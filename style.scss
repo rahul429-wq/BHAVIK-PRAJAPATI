@@ -209,6 +209,42 @@ section#sec-3 {
     }
   }
 }
+
+section#sec-4 {
+  min-height: 100vh;
+  position: relative;
+  .title {
+    position: absolute;
+    top: 50px;
+    font-size: 1.8rem;
+    color: $othercolor;
+  }
+  h1 {
+    color: red !important ;
+  }
+  .__card {
+    text-align: center;
+    padding: 20px;
+    width: 20%;
+    min-height: 30vh;
+    border: 1px solid $secondary;
+    color: $secondary;
+    transition: 0.3s ease;
+  }
+  .__card:hover {
+    border-bottom: 100px solid $secondary;
+    border-bottom-left-radius: 100px;
+  }
+  @media (max-width: 768px) {
+    flex-direction: column;
+    .__card {
+      width: 90%;
+    }
+    .title {
+      top: -100px;
+    }
+  }
+}
 section#sec-5 {
   min-height: 100vh;
   position: relative;
