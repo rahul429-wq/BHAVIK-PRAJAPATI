@@ -255,6 +255,13 @@ section#sec-4 .title {
   color: #f5eded;
 }
 
+section#sec-4 .git:hover {
+  -webkit-transition: 0.2s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: 0.2s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  background-color: white;
+  color: red;
+}
+
 section#sec-4 h1 {
   color: red !important;
 }

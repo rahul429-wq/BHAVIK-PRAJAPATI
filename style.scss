@@ -219,6 +219,11 @@ section#sec-4 {
     font-size: 1.8rem;
     color: $othercolor;
   }
+  .git:hover {
+    transition: 0.2s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    background-color: white;
+    color: red;
+  }
   h1 {
     color: red !important ;
   }
