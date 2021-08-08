@@ -75,8 +75,12 @@ header {
       flex-direction: column;
       position: absolute;
       background-color: #f5eded;
+      justify-content: flex-start;
+      align-items: flex-start;
       width: 100%;
-      top: 10vh;
+      min-height: 100vh;
+      top: 0%;
+      bottom: 0%;
       right: -100%;
       color: $primary;
       transition: 0.3s ease;
@@ -94,7 +98,7 @@ header {
       color: $secondary;
     }
     .toggle {
-      right: 0%;
+      right: -40%;
     }
   }
 }
@@ -223,6 +227,7 @@ section#sec-4 {
     transition: 0.2s cubic-bezier(0.55, 0.055, 0.675, 0.19);
     background-color: white;
     color: red;
+    border: 10px dashed red;
   }
   h1 {
     color: red !important ;
@@ -246,7 +251,7 @@ section#sec-4 {
       width: 90%;
     }
     .title {
-      top: -100px;
+      // top: -100px;
     }
   }
 }

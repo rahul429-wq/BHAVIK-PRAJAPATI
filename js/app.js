@@ -24,7 +24,7 @@ ham.addEventListener("click", () => {
 
 mybutton = document.getElementById("myBtn");
 
-// When the user scrolls down 20px from the top of the document, show the button
+// When the user scrolls do wn 20px from the top of the document, show the button
 window.onscroll = function () {
   scrollFunction();
 };
@@ -42,3 +42,14 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+var btnclose = document.getElementById("closebtn");
+btnclose.addEventListener("click", () => {
+  sidebar.classList.toggle("toggle");
+});
+
+var sec1 = document.getElementById("sec1");
+
+// sec1.onclick = () => {
+//   sidebar.classList.toggle("toggle");
+// };

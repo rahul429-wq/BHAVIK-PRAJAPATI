@@ -87,8 +87,16 @@ header span {
             flex-direction: column;
     position: absolute;
     background-color: #f5eded;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     width: 100%;
-    top: 10vh;
+    min-height: 100vh;
+    top: 0%;
+    bottom: 0%;
     right: -100%;
     color: black;
     -webkit-transition: 0.3s ease;
@@ -107,7 +115,7 @@ header span {
     color: #fdfdfd;
   }
   header .toggle {
-    right: 0%;
+    right: -40%;
   }
 }
 
@@ -260,6 +268,7 @@ section#sec-4 .git:hover {
   transition: 0.2s cubic-bezier(0.55, 0.055, 0.675, 0.19);
   background-color: white;
   color: red;
+  border: 10px dashed red;
 }
 
 section#sec-4 h1 {
@@ -291,9 +300,6 @@ section#sec-4 .__card:hover {
   }
   section#sec-4 .__card {
     width: 90%;
-  }
-  section#sec-4 .title {
-    top: -100px;
   }
 }
 
