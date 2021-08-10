@@ -130,6 +130,8 @@ section#sec-1 {
 section#sec-1 .image1 {
   width: 40%;
   height: 40%;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
 }
 
 section#sec-1 h1 {
