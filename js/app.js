@@ -19,6 +19,24 @@ let sidebar = document.querySelector(".sidebar");
 ham.addEventListener("click", () => {
   sidebar.classList.toggle("toggle");
 });
+// !ondoclick
+document.onclick = function (e) {
+  // console.log(e.target.id);
+  if (
+    e.target.id == "one" ||
+    e.target.id == "two" ||
+    e.target.id == "three" ||
+    e.target.id == "four" ||
+    e.target.id == "five"
+  ) {
+    sidebar.classList.toggle("toggle");
+    // console.log("hello");
+    // navlist.classList.toggle("show");
+  } else {
+    console.log("fellow");
+  }
+};
+// !ondoclick
 
 // !scrolltop
 
