@@ -51,13 +51,36 @@ header {
   li:hover a {
     // background-color: white;
     color: $secondary;
-    transform: translateY(-10px);
-    border-bottom: 20px solid $secondary;
+    border-bottom: 1px solid $secondary;
+    border-radius: 5%;
+    // transform: translateY(-10px);
+    // border-bottom: 20px solid $secondary;
   }
   span {
     display: none;
   }
+  .wrapper-li {
+    width: auto;
+    display: flex;
+  }
   @media (max-width: 768px) {
+    .wrapper-li {
+      flex-direction: column;
+      width: 100%;
+      li {
+        width: 100%;
+        border-bottom: 1px solid $bgcolor;
+      }
+      li a {
+        padding: 10px;
+        // color: rebeccapurple;
+        // color: white;
+        width: 100%;
+        // text-align: center;
+      }
+      padding: 50px 10px;
+      // background-color: #071e3d;
+    }
     background-color: $bgcolor;
     position: fixed;
     top: 0px;

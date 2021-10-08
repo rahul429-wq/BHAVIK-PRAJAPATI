@@ -56,13 +56,19 @@ header a {
 
 header li:hover a {
   color: #fdfdfd;
-  -webkit-transform: translateY(-10px);
-          transform: translateY(-10px);
-  border-bottom: 20px solid #fdfdfd;
+  border-bottom: 1px solid #fdfdfd;
+  border-radius: 5%;
 }
 
 header span {
   display: none;
+}
+
+header .wrapper-li {
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 @media (max-width: 768px) {
@@ -73,6 +79,22 @@ header span {
     left: 0px;
     right: 0px;
     z-index: 9999;
+  }
+  header .wrapper-li {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    padding: 50px 10px;
+  }
+  header .wrapper-li li {
+    width: 100%;
+    border-bottom: 1px solid #071e3d;
+  }
+  header .wrapper-li li a {
+    padding: 10px;
+    width: 100%;
   }
   header h1 {
     width: 100%;
