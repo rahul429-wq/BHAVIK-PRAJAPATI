@@ -20,6 +20,11 @@ section {
   section {
     scroll-snap-align: none !important;
   }
+  header li a:hover {
+    color: #fdfdfd;
+    border-bottom: 0px solid #fdfdfd;
+    border-radius: 5%;
+  }
 }
 
 body {
@@ -56,7 +61,6 @@ header a {
 
 header li:hover a {
   color: #fdfdfd;
-  border-bottom: 1px solid #fdfdfd;
   border-radius: 5%;
 }
 
@@ -126,9 +130,6 @@ header .wrapper-li {
   }
   header li:hover a {
     color: black;
-    -webkit-transform: translateY(-10px);
-            transform: translateY(-10px);
-    border-bottom: 20px solid #f5eded;
   }
   header span {
     display: block;
